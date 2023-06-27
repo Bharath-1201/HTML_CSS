@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+        body{
+            background-color:#1b1b1b;
+            font-family:'Nunito', sans-serif;
+        }
+        .card{
+            display:flex;
+            width:95%;
+            height:290px;
+            margin: 100px auto;
+            min-width:270px;
+            position:absolute;
+           
+        }
+        .r{
+            margin:auto;    
+            width:50%;
+            background-color:#f7f7f7;
+            height:100%;
+           border-bottom-left-radius:10px; border-top-left-radius:10px;
+        }
+        .l{
+            width:50%;
+            display:flex;
+            align-items:center;
+            flex-direction:column;
+            background-image:linear-gradient(135deg,#3472cf,#cf68b3);
+            border-bottom-right-radius:10px; border-top-right-radius:10px;
+        }
+        .ri{
+            text-align:center;
+        }
+       input{
+            display:block;
+            margin:10px auto;
+            border:none;
+            text-indent:10px;
+            height:20px;
+            font-family:'Nunito', sans-serif;
+       }
+       input:focus{
+           outline:none;
+           border:1px solid;
+       }
+       button{
+       display:block;
+           margin:auto;
+       }
+      .lt{
+          margin:auto;
+          padding-left:20px;
+      }
+      #up{
+          border:none;
+          background-color:#e6e6e6;
+          width:50%;
+          height:30px;
+          border-radius:15px;
+          font-family:'Nunito', sans-serif;
+          
+      }
+      .log{
+          border:none;
+          width:50%;
+          height:30px;
+          border-radius:15px;
+          background-color:#556dff;
+          color:white;
+          font-family:'Nunito', sans-serif;
+          font-weight:800;
+      }
+      .lp{
+          color:white;
+      }
+      .icon{
+          display:flex;
+          align-items:center;
+        justify-content:center;
+      }
+      i{
+          padding:0 10px;
+       
+      }
+      .d{
+          font-size:13px;
+          padding-right:10px;
+      }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="r">
+            <h1 class="ri">Log in</h1>
+            <div class="icon">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-google-plus"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p class="ri">or use your account</p>
+            <div class="form">
+            <form>
+                <input class="ri" type="text" placeholder="Email">
+                <input  class="ri" type="text" placeholder="Password">
+                <p class="ri">Forgot your password?</p>
+                <button class="ri log">Log in</button>
+            </form></div>
+        </div>
+        <div class="l">
+            <div class="lt">
+            <h1 class="lp">Hello, There! </h1>
+            <p class="lp d">Don't have account. Sign Up Free</p>
+            <button id="up"><b>SIGN UP</b></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
